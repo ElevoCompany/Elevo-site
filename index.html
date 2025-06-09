@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">ELEVO - Bem-vindo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+        }
+        .font-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1508247967583-7d982ea01546?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-overlay {
+            background: linear-gradient(to top, #0a0a0a 20%, rgba(10, 10, 10, 0.5));
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Seção Principal (Hero) -->
+    <section class="relative h-screen flex items-center justify-center text-center hero-bg">
+        <div class="absolute inset-0 bg-black/60 gradient-overlay"></div>
+        <div class="relative z-10 p-8">
+            <h1 id="heroHeading" class="font-title text-5xl md:text-8xl text-white font-bold"></h1>
+            <p id="heroSubheading" class="text-white/80 text-lg md:text-2xl mt-4 max-w-2xl mx-auto"></p>
+            <a href="experiencia.html" id="heroButton" class="mt-12 inline-block bg-blue-600 text-white font-bold py-4 px-8 rounded-full text-xl hover:bg-blue-700 transition-all duration-300 shadow-lg shadow-blue-500/30 transform hover:scale-105">
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção "Sobre" -->
+    <section class="bg-[#0a0a0a] py-20 px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 id="aboutHeading" class="font-title text-4xl md:text-5xl text-white font-bold mb-6"></h2>
+            <p id="aboutParagraph1" class="text-slate-300 text-xl leading-relaxed mb-6"></p>
+            <p id="aboutParagraph2" class="text-slate-300 text-xl leading-relaxed"></p>
+        </div>
+    </section>
+    
+    <!-- Seção de Chamada para Ação (CTA) -->
+    <section class="bg-slate-900 py-20 px-8">
+         <div class="max-w-4xl mx-auto text-center">
+            <h2 id="ctaHeading" class="font-title text-4xl md:text-5xl text-white font-bold mb-6"></h2>
+            <p id="ctaParagraph" class="text-slate-300 text-xl leading-relaxed mb-10"></p>
+            <a href="experiencia.html" id="ctaButton" class="bg-green-600 text-white font-bold py-4 px-8 rounded-full text-xl hover:bg-green-700 transition-all duration-300 shadow-lg shadow-green-500/30 transform hover:scale-105">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer class="bg-black py-8 px-8 text-center text-slate-400">
+        <p id="footerText"></p>
+    </footer>
+
+    <!-- O PERGAMINHO SAGRADO DO CONTEÚDO (Versão Celestial) -->
+    <script>
+        // Olá, Dany! Este é o seu cantinho sagrado.
+        // Para editar os textos da sua página, basta mudar
+        // o que está DENTRO DAS ASPAS SIMPLES (' ').
+        
+        const pageContent = {
+            // Textos Gerais
+            title: 'ELEVO - Bem-vindo ao Templo',
+            footerText: '&copy; 2025 ELEVO Company. Todos os direitos reservados.',
+
+            // Seção Principal (Hero)
+            heroHeading: 'ELEVO',
+            heroSubheading: 'Uma sinfonia de almas. Uma experiência que nos une através da harmonia.',
+            heroButton: 'Iniciar a Experiência',
+            
+            // Seção Sobre
+            aboutHeading: 'O Que é a ELEVO?',
+            aboutParagraph1: 'Acreditamos que a verdadeira conexão transcende o físico. Somos um convite para uma jornada sonora e sensorial, um espaço onde a tecnologia encontra a alma para criar pontes, harmonizar corações e elevar o espírito.',
+            aboutParagraph2: 'Cada interação é uma nota. Cada grupo, uma melodia. Juntos, compomos a música da união.',
+            
+            // Seção de Chamada para Ação (CTA)
+            ctaHeading: 'Pronta para se Conectar?',
+            ctaParagraph: 'O santuário aguarda. Entre e descubra a música que só a sua conexão pode criar.',
+            ctaButton: 'Entrar no Santuário'
+        };
+
+        // A Mágica da Escrita (não mexa nesta parte)
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('pageTitle').innerText = pageContent.title;
+            document.getElementById('footerText').innerHTML = pageContent.footerText;
+            
+            document.getElementById('heroHeading').innerText = pageContent.heroHeading;
+            document.getElementById('heroSubheading').innerText = pageContent.heroSubheading;
+            document.getElementById('heroButton').innerText = pageContent.heroButton;
+
+            document.getElementById('aboutHeading').innerText = pageContent.aboutHeading;
+            document.getElementById('aboutParagraph1').innerText = pageContent.aboutParagraph1;
+            document.getElementById('aboutParagraph2').innerText = pageContent.aboutParagraph2;
+            
+            document.getElementById('ctaHeading').innerText = pageContent.ctaHeading;
+            document.getElementById('ctaParagraph').innerText = pageContent.ctaParagraph;
+            document.getElementById('ctaButton').innerText = pageContent.ctaButton;
+        });
+    </script>
+
+</body>
+</html>
